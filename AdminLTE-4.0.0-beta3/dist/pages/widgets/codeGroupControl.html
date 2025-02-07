@@ -44,6 +44,7 @@
     <!--begin::Required Plugin(AdminLTE)-->
     <link rel="stylesheet" href="../../../dist/css/adminlte.css" />
     <!--end::Required Plugin(AdminLTE)-->
+    <script src="https://kit.fontawesome.com/1595242754.js" crossorigin="anonymous"></script>
   </head>
   <!--end::Head-->
   <!--begin::Body-->
@@ -385,7 +386,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="./widgets/codeControl.html" class="nav-link">
+                        <a href="../widgets/codeGroupControl.html" class="nav-link">
                         <i class="bi bi-arrow-return-right"></i>
                         <p>코드관리</p>
                         </a>
@@ -438,11 +439,11 @@
           <div class="container-fluid">
             <!--begin::Row-->
             <div class="row">
-              <div class="col-sm-6"><h3 class="mb-0">Icons</h3></div>
+              <div class="col-sm-6"><h3 class="mb-0">Code</h3></div>
               <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-end">
                   <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Icons</li>
+                  <li class="breadcrumb-item active" aria-current="page">Code</li>
                 </ol>
               </div>
             </div>
@@ -461,17 +462,64 @@
                 <!-- The icons -->
                 <div class="col-12">
                   <div class="card card-primary card-outline">
-                    <div class="card-header"><h3 class="card-title">Icons</h3></div>
-                    <div class="card-body">
-                      <p>You can use any font library you like with AdminLTE 4.</p>
-                      <strong>Recommendations</strong>
-                      <ul class="mt-1">
-                        <li><a href="https://fontawesome.com/" target="_blank">Font Awesome</a></li>
-                        <li>
-                          <a href="https://useiconic.com/open/" target="_blank">Iconic Icons</a>
-                        </li>
-                        <li><a href="https://ionicons.com/" target="_blank">Ion Icons</a></li>
-                      </ul>
+                    <div class="card-header"><h3 class="card-title">Code</h3></div>
+                    <div class="card-body"> 
+                      <div class="container">
+                        <div class="row row-cols-5 g-2">
+                          <div class="col">
+                            <select class="form-select form-select-sm" style="width: 100%;">
+                              <option selected>N</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col">
+                            <select class="form-select form-select-sm" style="width: 100%;">
+                              <option selected>Y</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col">
+                            <select class="form-select form-select-sm" style="width: 100%;">
+                              <option selected>날짜</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control form-control-sm" placeholder="날짜">
+                          </div>
+                          <div class="col">
+                            <input type="text" class="form-control form-control-sm" placeholder="날짜">
+                          </div> 
+                          <div class="col">
+                            <select class="form-select form-select-sm" style="width: 100%;">
+                              <option selected>검색구분</option>
+                              <option value="1">코드그룹 코드</option>
+                              <option value="2">코드그룹 이름</option>
+                              <option value="3">코드</option>
+                              <option value="4">대체 코드</option>
+                              <option value="5">코드 이름</option>
+                              <option value="6">코드 이름(영문)</option>
+                            </select>
+                          </div> 
+                          <div class="col">
+                            <input type="text" class="form-control form-control-sm" placeholder="검색어">
+                          </div>
+                          <div class="d-flex gap-2">
+                            <button class="btn btn-light btn-sm">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>                          
+                            <button class="btn btn-light btn-sm">
+                              <i class="fa-solid fa-rotate-right"></i>
+                            </button>
+                          </div>                                           
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -482,7 +530,82 @@
           </div>
           <!--end::Container-->
         </div>
-        <!--end::App Content-->
+        <div class="border p-3 rounded shadow-sm bg-white mt-3">
+          <h4 class="mb-3">Total: 162</h4>
+          
+          <table class="table table-bordered">
+            <thead class="table-light">
+              <tr>
+                <th><input type="checkbox"></th>
+                <th>#</th>
+                <th>사용</th>
+                <th>코드 그룹 코드</th>
+                <th>코드 그룹 이름</th>
+                <th>코드</th>
+                <th>대체 코드</th>
+                <th>코드 이동</th>
+                <th>코드 이동(영문)</th>
+                <th>순서</th>
+                <th>등록일</th>
+                <th>수정일</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>162</td>
+                <td>Y</td>
+                <td>42</td>
+                <td>작품.기타사이트유형</td>
+                <td>381</td>
+                <td>공식홈페이지</td>
+                <td>1</td>
+                <td>공식홈페이지</td>
+                <td>1</td>
+                <td>2024-02-07</td>
+                <td>2024-02-07</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>161</td>
+                <td>Y</td>
+                <td>42</td>
+                <td>작품.기타사이트유형</td>
+                <td>382</td>
+                <td>기타사이트</td>
+                <td>2</td>
+                <td>기타사이트</td>
+                <td>2</td>
+                <td>2024-02-07</td>
+                <td>2024-02-07</td>
+              </tr>
+            </tbody>
+          </table>
+  
+          <!-- 페이지네이션 & 버튼 -->
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <div class="btn-group">
+              <button class="btn btn-danger"><i class="fa fa-times"></i></button>
+              <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+            </div>
+            
+            <nav>
+              <ul class="pagination mb-0">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+              </ul>
+            </nav>
+  
+            <div class="btn-group">
+              <button class="btn btn-success"><i class="fa fa-upload"></i></button>
+              <button class="btn btn-primary"><i class="fa fa-plus"></i></button>
+            </div>
+          </div>
+  
+        </div>     
       </main>
       <!--end::App Main-->
       <!--begin::Footer-->
@@ -541,7 +664,7 @@
             },
           });
         }
-      });
+      }); 
     </script>
     <!--end::OverlayScrollbars Configure-->
     <!--end::Script-->
